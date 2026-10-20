@@ -1,0 +1,58 @@
+{
+  "meta": {
+    "device": "cpu",
+    "num_threads": 4,
+    "torch": "2.3.1+cpu",
+    "protocol": "warmup 10, median of 100 (b=1) / 20 (b=128), inference_mode"
+  },
+  "models": {
+    "mlp": {
+      "params": 235146,
+      "hand_flops_layers": {
+        "fc1": 401408,
+        "fc2": 65536,
+        "fc3": 2560
+      },
+      "hand_flops": 469504,
+      "thop_flops": 469504,
+      "flopcounter_flops": 469504,
+      "latency_b1_ms": 0.06089999806135893,
+      "latency_b128_ms": 0.24545000633224845
+    },
+    "cnn": {
+      "params": 20490,
+      "hand_flops_layers": {
+        "conv1": 225792,
+        "conv2": 1806336,
+        "fc": 31360
+      },
+      "hand_flops": 2063488,
+      "thop_flops": 2063488,
+      "flopcounter_flops": 2063488,
+      "latency_b1_ms": 0.14259997988119721,
+      "latency_b128_ms": 8.286500029498711
+    },
+    "attention": {
+      "params": 71818,
+      "hand_flops_layers": {
+        "patch_embed": 100352,
+        "L1.qkv": 393216,
+        "L1.scores": 32768,
+        "L1.attn_v": 32768,
+        "L1.out_proj": 131072,
+        "L1.ffn": 524288,
+        "L2.qkv": 393216,
+        "L2.scores": 32768,
+        "L2.attn_v": 32768,
+        "L2.out_proj": 131072,
+        "L2.ffn": 524288,
+        "head": 1280
+      },
+      "hand_flops": 2329856,
+      "thop_flops": 101632,
+      "flopcounter_flops": 2329856,
+      "latency_b1_ms": 0.5133500089868903,
+      "latency_b128_ms": 7.556299999123439
+    }
+  }
+}
