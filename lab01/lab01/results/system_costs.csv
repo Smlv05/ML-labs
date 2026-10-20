@@ -1,0 +1,3 @@
+model,train_time_s_median,infer_ms_median,model_bytes,model_KB,baseline_rss_MiB,peak_train_MiB,peak_infer_MiB
+logreg,0.4259,0.0569,1055,1.03,268.8,268.8,268.8
+random_forest,0.1685,2.5099,290889,284.07,270.4,270.4,270.5

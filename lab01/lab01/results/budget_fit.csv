@@ -1,0 +1,9 @@
+model,tier,memory_ok,latency_ok,size_ok,fits
+logreg,Cloud,True,True,True,True
+logreg,Edge,True,True,True,True
+logreg,Mobile,False,True,True,False
+logreg,TinyML,False,True,True,False
+random_forest,Cloud,True,True,True,True
+random_forest,Edge,True,True,True,True
+random_forest,Mobile,False,True,True,False
+random_forest,TinyML,False,True,False,False
