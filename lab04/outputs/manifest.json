@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-27 18:21",
+  "seed": 42,
+  "versions": {
+    "python": "3.11.8",
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "scikit-learn": "1.5.0",
+    "pyyaml": "6.0.3",
+    "matplotlib": "3.9.0",
+    "joblib": "1.4.2"
+  },
+  "hashes": {
+    "config.yaml": "c0dd0849cbd0093653f99877a24432f33da202962efa6117af004819f2ec3153",
+    "raw.csv": "8f970e20c9991979ec0a9ccb65ce97543d678709a2c6f8ef23f7fb32f40adddc",
+    "train.csv": "7916aece5039050caf54fd55423898cbf22bf9e23d92f4f0f97c284e94275271",
+    "test.csv": "8363f5a21eefd0a527fd3e90e9de471f7d433be4c175334e5ef90456d0c35ea9",
+    "X_train": "154241a859cc915c376aa8644586ea23f52d238f174dd0e4b085ef2b2dd0c055",
+    "X_test": "23a1af108302652139ea746143d3454ae0372d9a2807cb82864628ecf104d682",
+    "y_train": "627c78c93f12bb43d7a50ab489d1f07bae4388a040f80f6d9e84a695afb9e4e0",
+    "y_test": "d4161b42fd4a46790f1cf5116682dfb75a016c25380b197ba5e4b9aa55a168ed"
+  }
+}

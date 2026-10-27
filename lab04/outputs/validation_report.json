@@ -1,0 +1,223 @@
+{
+  "raw": {
+    "name": "raw",
+    "rows": 48842,
+    "missing_columns": [],
+    "wrong_dtype": [],
+    "missing_values": {
+      "workclass": 2799,
+      "occupation": 2809,
+      "native-country": 857
+    },
+    "ranges": {
+      "age": {
+        "min": 17.0,
+        "max": 90.0,
+        "allowed": [
+          17,
+          90
+        ],
+        "bad_rows": 0
+      },
+      "fnlwgt": {
+        "min": 12285.0,
+        "max": 1490400.0,
+        "allowed": [
+          1,
+          2000000
+        ],
+        "bad_rows": 0
+      },
+      "education-num": {
+        "min": 1.0,
+        "max": 16.0,
+        "allowed": [
+          1,
+          16
+        ],
+        "bad_rows": 0
+      },
+      "capital-gain": {
+        "min": 0.0,
+        "max": 99999.0,
+        "allowed": [
+          0,
+          99999
+        ],
+        "bad_rows": 0
+      },
+      "capital-loss": {
+        "min": 0.0,
+        "max": 4356.0,
+        "allowed": [
+          0,
+          4356
+        ],
+        "bad_rows": 0
+      },
+      "hours-per-week": {
+        "min": 1.0,
+        "max": 99.0,
+        "allowed": [
+          1,
+          99
+        ],
+        "bad_rows": 0
+      }
+    },
+    "labels": [
+      "<=50K",
+      ">50K"
+    ],
+    "duplicates": 52,
+    "passed": true
+  },
+  "train": {
+    "name": "train",
+    "rows": 39032,
+    "missing_columns": [],
+    "wrong_dtype": [],
+    "missing_values": {
+      "workclass": 2233,
+      "occupation": 2241,
+      "native-country": 674
+    },
+    "ranges": {
+      "age": {
+        "min": 17.0,
+        "max": 90.0,
+        "allowed": [
+          17,
+          90
+        ],
+        "bad_rows": 0
+      },
+      "fnlwgt": {
+        "min": 12285.0,
+        "max": 1490400.0,
+        "allowed": [
+          1,
+          2000000
+        ],
+        "bad_rows": 0
+      },
+      "education-num": {
+        "min": 1.0,
+        "max": 16.0,
+        "allowed": [
+          1,
+          16
+        ],
+        "bad_rows": 0
+      },
+      "capital-gain": {
+        "min": 0.0,
+        "max": 99999.0,
+        "allowed": [
+          0,
+          99999
+        ],
+        "bad_rows": 0
+      },
+      "capital-loss": {
+        "min": 0.0,
+        "max": 4356.0,
+        "allowed": [
+          0,
+          4356
+        ],
+        "bad_rows": 0
+      },
+      "hours-per-week": {
+        "min": 1.0,
+        "max": 99.0,
+        "allowed": [
+          1,
+          99
+        ],
+        "bad_rows": 0
+      }
+    },
+    "labels": [
+      "<=50K",
+      ">50K"
+    ],
+    "duplicates": 0,
+    "passed": true
+  },
+  "test": {
+    "name": "test",
+    "rows": 9758,
+    "missing_columns": [],
+    "wrong_dtype": [],
+    "missing_values": {
+      "workclass": 562,
+      "occupation": 564,
+      "native-country": 182
+    },
+    "ranges": {
+      "age": {
+        "min": 17.0,
+        "max": 90.0,
+        "allowed": [
+          17,
+          90
+        ],
+        "bad_rows": 0
+      },
+      "fnlwgt": {
+        "min": 13492.0,
+        "max": 1125613.0,
+        "allowed": [
+          1,
+          2000000
+        ],
+        "bad_rows": 0
+      },
+      "education-num": {
+        "min": 1.0,
+        "max": 16.0,
+        "allowed": [
+          1,
+          16
+        ],
+        "bad_rows": 0
+      },
+      "capital-gain": {
+        "min": 0.0,
+        "max": 99999.0,
+        "allowed": [
+          0,
+          99999
+        ],
+        "bad_rows": 0
+      },
+      "capital-loss": {
+        "min": 0.0,
+        "max": 4356.0,
+        "allowed": [
+          0,
+          4356
+        ],
+        "bad_rows": 0
+      },
+      "hours-per-week": {
+        "min": 1.0,
+        "max": 99.0,
+        "allowed": [
+          1,
+          99
+        ],
+        "bad_rows": 0
+      }
+    },
+    "labels": [
+      "<=50K",
+      ">50K"
+    ],
+    "duplicates": 0,
+    "unseen_categories": {},
+    "passed": true
+  },
+  "train_test_overlap": 0
+}

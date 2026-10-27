@@ -1,0 +1,6 @@
+{
+  "accuracy": 0.854,
+  "majority_class_accuracy": 0.7606,
+  "f1": 0.6624,
+  "roc_auc": 0.9051
+}

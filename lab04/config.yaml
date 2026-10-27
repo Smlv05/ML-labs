@@ -1,0 +1,61 @@
+# config for lab 4 (UCI Adult)
+seed: 42
+test_size: 0.2
+target: class
+positive: ">50K"
+
+numeric_cols:
+  [age, fnlwgt, education-num, capital-gain, capital-loss, hours-per-week]
+categorical_cols:
+  [
+    workclass,
+    education,
+    marital-status,
+    occupation,
+    relationship,
+    race,
+    sex,
+    native-country,
+  ]
+
+# allowed ranges for validation
+ranges:
+  age: [17, 90]
+  fnlwgt: [1, 2000000]
+  education-num: [1, 16]
+  capital-gain: [0, 99999]
+  capital-loss: [0, 4356]
+  hours-per-week: [1, 99]
+
+# columns used for the model
+# I dropped fnlwgt (it's a census weight) and education (same info as education-num)
+model_numeric:
+  [
+    age,
+    education-num,
+    hours-per-week,
+    capital_net,
+    capital_gain_log,
+    capital_loss_log,
+    has_capital,
+  ]
+model_categorical:
+  [
+    workclass,
+    marital-status,
+    occupation,
+    relationship,
+    race,
+    sex,
+    native-country,
+  ]
+
+# outlier clipping (percentiles from train set)
+clip_low: 0.01
+clip_high: 0.99
+
+# label audit
+cv_folds: 5
+suspect_threshold: 0.1
+
+output_dir: outputs

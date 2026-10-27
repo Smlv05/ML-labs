@@ -6,3 +6,8 @@ venv/
 .env
 data/
 *.pt
+lab04/.cache/
+lab04/outputs/*.csv
+lab04/outputs/*.npy
+lab04/outputs/*.joblib
+lab04/*.pdf
