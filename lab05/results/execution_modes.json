@@ -1,0 +1,153 @@
+{
+  "env": {
+    "torch": "2.3.1+cpu",
+    "python": "3.11.8",
+    "os": "Windows",
+    "threads": 6
+  },
+  "execution_modes": [
+    {
+      "batch_size": 1,
+      "eager_us": 47.74400033056736,
+      "compiled_mode": "torch.jit.trace",
+      "compiled_us": 28.31700025126338,
+      "compile_first_call_s": 0.06876910012215376,
+      "outputs_match": true,
+      "speedup_compiled": 1.6860543103762282,
+      "break_even_calls": 3539.872334453482
+    },
+    {
+      "batch_size": 32,
+      "eager_us": 68.43799958005548,
+      "compiled_mode": "torch.jit.trace",
+      "compiled_us": 55.720999371260405,
+      "compile_first_call_s": 0.01894880016334355,
+      "outputs_match": true,
+      "speedup_compiled": 1.228226348276054,
+      "break_even_calls": 1490.0369467823527
+    },
+    {
+      "batch_size": 1024,
+      "eager_us": 310.9760000370443,
+      "compiled_mode": "torch.jit.trace",
+      "compiled_us": 279.339998960495,
+      "compile_first_call_s": 0.020629100035876036,
+      "outputs_match": true,
+      "speedup_compiled": 1.1132526712761366,
+      "break_even_calls": 652.0767269529427
+    }
+  ],
+  "tensors": {
+    "x": {
+      "shape": [
+        32,
+        64
+      ],
+      "dtype": "torch.float32",
+      "stride": [
+        64,
+        1
+      ],
+      "contiguous": true,
+      "storage_offset": 0
+    },
+    "fc1.weight": {
+      "shape": [
+        128,
+        64
+      ],
+      "dtype": "torch.float32",
+      "stride": [
+        64,
+        1
+      ],
+      "contiguous": true,
+      "storage_offset": 0
+    },
+    "x.t() (view)": {
+      "shape": [
+        64,
+        32
+      ],
+      "dtype": "torch.float32",
+      "stride": [
+        1,
+        64
+      ],
+      "contiguous": false,
+      "storage_offset": 0
+    },
+    "x[:, ::2] (view)": {
+      "shape": [
+        32,
+        32
+      ],
+      "dtype": "torch.float32",
+      "stride": [
+        64,
+        2
+      ],
+      "contiguous": false,
+      "storage_offset": 0
+    },
+    "x.t().contiguous()": {
+      "shape": [
+        64,
+        32
+      ],
+      "dtype": "torch.float32",
+      "stride": [
+        32,
+        1
+      ],
+      "contiguous": true,
+      "storage_offset": 0
+    },
+    "x.double()": {
+      "shape": [
+        32,
+        64
+      ],
+      "dtype": "torch.float64",
+      "stride": [
+        64,
+        1
+      ],
+      "contiguous": true,
+      "storage_offset": 0
+    }
+  },
+  "contiguity": [
+    {
+      "op": "row sum  .sum(dim=1)",
+      "contiguous_us": 3048.4399991109967,
+      "non_contiguous_us": 10455.050016753376,
+      "slowdown": 3.4296394286265555
+    },
+    {
+      "op": "elementwise  t*2+1",
+      "contiguous_us": 11289.190012030303,
+      "non_contiguous_us": 11200.139997527003,
+      "slowdown": 0.9921119217226033
+    },
+    {
+      "op": "strided slice  .sum()",
+      "contiguous_us": 1535.1299894973636,
+      "non_contiguous_us": 2020.0200146064162,
+      "slowdown": 1.3158625187615653
+    },
+    {
+      "op": "flatten  .view/.reshape(-1)",
+      "contiguous_us": 2.71000899374485,
+      "non_contiguous_us": 24805.839988403022,
+      "slowdown": 9153.416112514391
+    },
+    {
+      "op": "matmul 1024 (t @ M)",
+      "contiguous_us": 4436.6100104525685,
+      "non_contiguous_us": 4906.22001234442,
+      "slowdown": 1.1058488352109965
+    }
+  ],
+  "transpose_contiguous_copy_us": 25251.640006899834
+}

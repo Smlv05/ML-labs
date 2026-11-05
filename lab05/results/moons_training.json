@@ -1,0 +1,34 @@
+{
+  "setup": {
+    "n_samples": 100,
+    "arch": "2-8-1 ReLU/sigmoid",
+    "loss": "BCE",
+    "epochs": 200,
+    "lr": 0.5,
+    "optimizer": "full-batch GD",
+    "dtype": "float64",
+    "runs": 5
+  },
+  "engine_times_s": [
+    13.55676109995693,
+    15.613271600101143,
+    14.949320799903944,
+    14.80424700002186,
+    16.57785169989802
+  ],
+  "torch_times_s": [
+    1.408530900022015,
+    0.08151570009067655,
+    0.0780353001318872,
+    0.07018180005252361,
+    0.09956020000390708
+  ],
+  "engine_median_s": 14.949320799903944,
+  "torch_median_s": 0.08151570009067655,
+  "speedup_torch": 183.3919206149809,
+  "final_loss_engine": 0.16410776579059827,
+  "final_loss_torch": 0.16410776579059833,
+  "max_loss_gap_last_run": 2.7755575615628914e-16,
+  "accuracy_engine": 0.92,
+  "accuracy_torch": 0.92
+}
