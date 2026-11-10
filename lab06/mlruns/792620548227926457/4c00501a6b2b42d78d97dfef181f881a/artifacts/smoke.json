@@ -1,0 +1,55 @@
+{
+  "run_name": "smoke",
+  "config": {
+    "experiment": "lab06-training-pipeline",
+    "run_name": "smoke",
+    "seed": 42,
+    "model": "cnn",
+    "data": {
+      "root": "../lab03/data",
+      "val_size": 5000,
+      "batch_size": 128,
+      "eval_batch_size": 512,
+      "num_workers": 0,
+      "persistent_workers": true
+    },
+    "train": {
+      "epochs": 1,
+      "optimizer": "adam",
+      "lr": 0.001,
+      "momentum": 0.9,
+      "weight_decay": 0.0,
+      "scheduler": "none",
+      "step_size": 4,
+      "gamma": 0.1,
+      "plateau_factor": 0.3,
+      "plateau_patience": 1,
+      "accum_steps": 1
+    },
+    "checkpoint": {
+      "dir": "checkpoints"
+    },
+    "mlflow": {
+      "tracking_uri": "mlruns"
+    }
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.5270725569183177,
+      "train_acc": 0.8129272727272727,
+      "epoch_s": 25.230018400001427,
+      "throughput": 2179.942920691524,
+      "val_loss": 0.3968713631629944,
+      "val_acc": 0.8582,
+      "lr": 0.001
+    }
+  ],
+  "test_acc": 0.86,
+  "interrupted": false,
+  "median_throughput": 2179.942920691524,
+  "memory": {
+    "peak_mem_mb": 424.60546875,
+    "peak_mem_delta_mb": 45.51171875
+  }
+}

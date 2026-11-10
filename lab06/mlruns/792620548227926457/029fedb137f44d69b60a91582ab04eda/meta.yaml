@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Nitro/Desktop/ML%20labs/lab06/mlruns/792620548227926457/029fedb137f44d69b60a91582ab04eda/artifacts
+end_time: 1794340562244
+entry_point_name: ''
+experiment_id: '792620548227926457'
+lifecycle_stage: active
+run_id: 029fedb137f44d69b60a91582ab04eda
+run_name: sched-sgd-plateau
+run_uuid: 029fedb137f44d69b60a91582ab04eda
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1794340410606
+status: 3
+tags: []
+user_id: Nitro

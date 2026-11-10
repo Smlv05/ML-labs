@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Nitro/Desktop/ML%20labs/lab06/mlruns/792620548227926457/4c00501a6b2b42d78d97dfef181f881a/artifacts
+end_time: 1794331170990
+entry_point_name: ''
+experiment_id: '792620548227926457'
+lifecycle_stage: active
+run_id: 4c00501a6b2b42d78d97dfef181f881a
+run_name: smoke
+run_uuid: 4c00501a6b2b42d78d97dfef181f881a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1794331136473
+status: 3
+tags: []
+user_id: Nitro

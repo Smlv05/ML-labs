@@ -11,3 +11,5 @@ lab04/outputs/*.csv
 lab04/outputs/*.npy
 lab04/outputs/*.joblib
 lab04/*.pdf
+lab06/checkpoints/
+lab06/results/profile_trace.json

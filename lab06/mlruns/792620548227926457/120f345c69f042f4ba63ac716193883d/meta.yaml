@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Nitro/Desktop/ML%20labs/lab06/mlruns/792620548227926457/120f345c69f042f4ba63ac716193883d/artifacts
+end_time: 1794340727487
+entry_point_name: ''
+experiment_id: '792620548227926457'
+lifecycle_stage: active
+run_id: 120f345c69f042f4ba63ac716193883d
+run_name: sched-adam-step
+run_uuid: 120f345c69f042f4ba63ac716193883d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1794340567828
+status: 3
+tags: []
+user_id: Nitro

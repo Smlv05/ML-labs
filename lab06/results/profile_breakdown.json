@@ -1,0 +1,37 @@
+{
+  "epoch_s": 237.14379679999547,
+  "steps": 430,
+  "batch_size": 128,
+  "num_workers": 0,
+  "device": "cpu",
+  "breakdown": [
+    {
+      "phase": "data_loading",
+      "profiler_ms": 15362.1,
+      "profiler_share_%": 65.0,
+      "wall_ms": 15370.4,
+      "wall_share_%": 64.9
+    },
+    {
+      "phase": "forward",
+      "profiler_ms": 3702.5,
+      "profiler_share_%": 15.7,
+      "wall_ms": 3716.1,
+      "wall_share_%": 15.7
+    },
+    {
+      "phase": "backward",
+      "profiler_ms": 3760.2,
+      "profiler_share_%": 15.9,
+      "wall_ms": 3777.0,
+      "wall_share_%": 16.0
+    },
+    {
+      "phase": "optimizer_step",
+      "profiler_ms": 795.7,
+      "profiler_share_%": 3.4,
+      "wall_ms": 808.7,
+      "wall_share_%": 3.4
+    }
+  ]
+}

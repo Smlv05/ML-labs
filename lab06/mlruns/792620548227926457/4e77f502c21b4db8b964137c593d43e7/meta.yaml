@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Nitro/Desktop/ML%20labs/lab06/mlruns/792620548227926457/4e77f502c21b4db8b964137c593d43e7/artifacts
+end_time: 1794340892535
+entry_point_name: ''
+experiment_id: '792620548227926457'
+lifecycle_stage: active
+run_id: 4e77f502c21b4db8b964137c593d43e7
+run_name: sched-adam-cosine
+run_uuid: 4e77f502c21b4db8b964137c593d43e7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1794340733049
+status: 3
+tags: []
+user_id: Nitro

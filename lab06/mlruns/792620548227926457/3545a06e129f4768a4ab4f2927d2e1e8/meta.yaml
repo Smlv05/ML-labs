@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Nitro/Desktop/ML%20labs/lab06/mlruns/792620548227926457/3545a06e129f4768a4ab4f2927d2e1e8/artifacts
+end_time: 1794341085437
+entry_point_name: ''
+experiment_id: '792620548227926457'
+lifecycle_stage: active
+run_id: 3545a06e129f4768a4ab4f2927d2e1e8
+run_name: sched-adam-plateau
+run_uuid: 3545a06e129f4768a4ab4f2927d2e1e8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1794340898027
+status: 3
+tags: []
+user_id: Nitro

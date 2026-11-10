@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Nitro/Desktop/ML%20labs/lab06/mlruns/792620548227926457/ab8ba25fbb0c4396a1ec9c19242e1a7a/artifacts
+end_time: 1794342090201
+entry_point_name: ''
+experiment_id: '792620548227926457'
+lifecycle_stage: active
+run_id: ab8ba25fbb0c4396a1ec9c19242e1a7a
+run_name: resume-demo
+run_uuid: ab8ba25fbb0c4396a1ec9c19242e1a7a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1794341990655
+status: 3
+tags: []
+user_id: Nitro

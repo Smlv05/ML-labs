@@ -1,0 +1,95 @@
+{
+  "run_name": "batch-256",
+  "config": {
+    "experiment": "lab06-training-pipeline",
+    "run_name": "batch-256",
+    "seed": 42,
+    "model": "cnn",
+    "data": {
+      "root": "../lab03/data",
+      "val_size": 5000,
+      "batch_size": 256,
+      "eval_batch_size": 512,
+      "num_workers": 0,
+      "persistent_workers": true
+    },
+    "train": {
+      "epochs": 5,
+      "optimizer": "adam",
+      "lr": 0.001,
+      "momentum": 0.9,
+      "weight_decay": 0.0,
+      "scheduler": "none",
+      "step_size": 4,
+      "gamma": 0.1,
+      "plateau_factor": 0.3,
+      "plateau_patience": 1,
+      "accum_steps": 1
+    },
+    "checkpoint": {
+      "dir": "checkpoints"
+    },
+    "mlflow": {
+      "tracking_uri": "mlruns"
+    }
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.6163814762202177,
+      "train_acc": 0.7857818181818181,
+      "epoch_s": 21.423835699999472,
+      "throughput": 2567.234027098208,
+      "val_loss": 0.4520018947124481,
+      "val_acc": 0.838,
+      "lr": 0.001
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.38520659391229806,
+      "train_acc": 0.8630181818181818,
+      "epoch_s": 25.432385399999475,
+      "throughput": 2162.596985495554,
+      "val_loss": 0.3951175591468811,
+      "val_acc": 0.8574,
+      "lr": 0.001
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.33888260596448727,
+      "train_acc": 0.8808545454545454,
+      "epoch_s": 50.425013000000035,
+      "throughput": 1090.728523956949,
+      "val_loss": 0.35584102544784546,
+      "val_acc": 0.8738,
+      "lr": 0.001
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.3081789857279171,
+      "train_acc": 0.8909272727272727,
+      "epoch_s": 37.85817339999994,
+      "throughput": 1452.7906409768857,
+      "val_loss": 0.32052651567459106,
+      "val_acc": 0.8856,
+      "lr": 0.001
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.2887730913292278,
+      "train_acc": 0.8976181818181819,
+      "epoch_s": 27.420357399998466,
+      "throughput": 2005.8090125405542,
+      "val_loss": 0.302702493429184,
+      "val_acc": 0.8906,
+      "lr": 0.001
+    }
+  ],
+  "test_acc": 0.8902,
+  "interrupted": false,
+  "median_throughput": 2005.8090125405542,
+  "memory": {
+    "peak_mem_mb": 454.640625,
+    "peak_mem_delta_mb": 74.71484375
+  }
+}

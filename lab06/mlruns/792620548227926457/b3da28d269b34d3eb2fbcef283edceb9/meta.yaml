@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Nitro/Desktop/ML%20labs/lab06/mlruns/792620548227926457/b3da28d269b34d3eb2fbcef283edceb9/artifacts
+end_time: 1794341490336
+entry_point_name: ''
+experiment_id: '792620548227926457'
+lifecycle_stage: active
+run_id: b3da28d269b34d3eb2fbcef283edceb9
+run_name: accum-bs256
+run_uuid: b3da28d269b34d3eb2fbcef283edceb9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1794341413484
+status: 3
+tags: []
+user_id: Nitro

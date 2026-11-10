@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Nitro/Desktop/ML%20labs/lab06/mlruns/792620548227926457/ac80d09a89554570a2f59b485d469bb2/artifacts
+end_time: 1794340405088
+entry_point_name: ''
+experiment_id: '792620548227926457'
+lifecycle_stage: active
+run_id: ac80d09a89554570a2f59b485d469bb2
+run_name: sched-sgd-cosine
+run_uuid: ac80d09a89554570a2f59b485d469bb2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1794340254158
+status: 3
+tags: []
+user_id: Nitro

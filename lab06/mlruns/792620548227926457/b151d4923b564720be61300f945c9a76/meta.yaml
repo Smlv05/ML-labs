@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Nitro/Desktop/ML%20labs/lab06/mlruns/792620548227926457/b151d4923b564720be61300f945c9a76/artifacts
+end_time: 1794331617174
+entry_point_name: ''
+experiment_id: '792620548227926457'
+lifecycle_stage: active
+run_id: b151d4923b564720be61300f945c9a76
+run_name: workers-nw0
+run_uuid: b151d4923b564720be61300f945c9a76
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1794331617030
+status: 3
+tags: []
+user_id: Nitro
