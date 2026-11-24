@@ -1,0 +1,5 @@
+student,train_fraction,test_acc
+plain,1.0,0.9243
+distilled,1.0,0.9256
+plain,0.1,0.8776
+distilled,0.1,0.8815

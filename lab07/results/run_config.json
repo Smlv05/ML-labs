@@ -1,0 +1,10 @@
+{
+  "baseline_epochs": 8,
+  "ft_epochs": 3,
+  "student_epochs": 12,
+  "T": 4.0,
+  "alpha": 0.5,
+  "seed": 42,
+  "skip_data_exp": false,
+  "quick": false
+}

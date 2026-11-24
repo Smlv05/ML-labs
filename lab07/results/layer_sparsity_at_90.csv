@@ -1,0 +1,13 @@
+scope,layer,sparsity
+global,features.0,0.1006944477558136
+global,features.3,0.6916775107383728
+global,features.7,0.7879909873008728
+global,features.11,0.8551093339920044
+global,classifier.2,0.9263482093811035
+global,classifier.5,0.8251562714576721
+layer,features.0,0.8993055820465088
+layer,features.3,0.8999565839767456
+layer,features.7,0.8999972939491272
+layer,features.11,0.8999972939491272
+layer,classifier.2,0.8999999761581421
+layer,classifier.5,0.8999999761581421

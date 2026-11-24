@@ -13,3 +13,5 @@ lab04/outputs/*.joblib
 lab04/*.pdf
 lab06/checkpoints/
 lab06/results/profile_trace.json
+lab07/data/
+lab07/checkpoints/
