@@ -1,0 +1,23 @@
+{
+  "backend": "fbgemm",
+  "system": {
+    "torch": "2.3.1+cpu",
+    "python": "3.11.8",
+    "machine": "AMD64",
+    "processor": "Intel64 Family 6 Model 141 Stepping 1, GenuineIntel",
+    "quant_engine": "fbgemm",
+    "latency_threads": 1
+  },
+  "deployment": {
+    "Cloud": "dynamic quant",
+    "Edge": "static quant",
+    "Mobile": "distilled + static quant",
+    "TinyML": "distilled + static quant"
+  },
+  "rules": {
+    "Cloud": "highest accuracy; latency/size are not binding (fast CPU/GPU, lots of memory)",
+    "Edge": "lowest p95 latency with accuracy drop <= 1.0 pp",
+    "Mobile": "int8 only, smallest size then p95, drop <= 1.5 pp",
+    "TinyML": "full-integer int8 only (no FPU/PyTorch on MCU), smallest size, drop <= 2.0 pp"
+  }
+}

@@ -15,3 +15,7 @@ lab06/checkpoints/
 lab06/results/profile_trace.json
 lab07/data/
 lab07/checkpoints/
+
+project/outputs/*.npy
+!project/outputs/baseline.pt
+lab07/checkpoints/

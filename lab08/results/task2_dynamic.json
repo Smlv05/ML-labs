@@ -1,0 +1,41 @@
+{
+  "backend": "fbgemm",
+  "system": {
+    "torch": "2.3.1+cpu",
+    "python": "3.11.8",
+    "machine": "AMD64",
+    "processor": "Intel64 Family 6 Model 141 Stepping 1, GenuineIntel",
+    "quant_engine": "fbgemm",
+    "latency_threads": 1
+  },
+  "rows": [
+    {
+      "variant": "fp32 baseline",
+      "test_acc": 0.9369,
+      "size_kb": 3861.177734375,
+      "p50_ms": 1.7591000068932772,
+      "p95_ms": 2.433115000894759,
+      "mean_ms": 1.9114507000922458,
+      "delta_acc_pp": 0.0,
+      "size_ratio": 1.0,
+      "speedup_p50": 1.0
+    },
+    {
+      "variant": "dynamic int8",
+      "test_acc": 0.9373,
+      "size_kb": 1683.978515625,
+      "p50_ms": 1.7632500021136366,
+      "p95_ms": 2.460424992023036,
+      "mean_ms": 1.9308725998271257,
+      "delta_acc_pp": 0.0400000000000067,
+      "size_ratio": 2.292890139956414,
+      "speedup_p50": 0.9976463943199293
+    }
+  ],
+  "quantized_modules": [
+    "classifier.2",
+    "classifier.2._packed_params",
+    "classifier.5",
+    "classifier.5._packed_params"
+  ]
+}

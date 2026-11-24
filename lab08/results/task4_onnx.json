@@ -1,0 +1,37 @@
+{
+  "onnx_file": "baseline.onnx",
+  "opset": 17,
+  "atol": 0.0001,
+  "max_abs_diff": 9.5367431640625e-06,
+  "passed": true,
+  "argmax_agreement": 1.0,
+  "n_test": 10000,
+  "onnx_version": "1.16.1",
+  "onnxruntime_version": "1.18.0",
+  "system": {
+    "torch": "2.3.1+cpu",
+    "python": "3.11.8",
+    "machine": "AMD64",
+    "processor": "Intel64 Family 6 Model 141 Stepping 1, GenuineIntel",
+    "quant_engine": "x86",
+    "latency_threads": 1
+  },
+  "rows": [
+    {
+      "runtime": "PyTorch eager FP32",
+      "test_acc": 0.9369,
+      "size_kb": 3861.177734375,
+      "p50_ms": 1.6430000032414682,
+      "p95_ms": 1.765625012194505,
+      "mean_ms": 1.6672309997666162
+    },
+    {
+      "runtime": "ONNX Runtime FP32",
+      "test_acc": 0.9369,
+      "size_kb": 3849.078125,
+      "p50_ms": 0.5898000017623417,
+      "p95_ms": 0.6141150042822119,
+      "mean_ms": 0.5943754999607336
+    }
+  ]
+}

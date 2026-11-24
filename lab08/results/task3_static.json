@@ -1,0 +1,128 @@
+{
+  "backend": "fbgemm",
+  "system": {
+    "torch": "2.3.1+cpu",
+    "python": "3.11.8",
+    "machine": "AMD64",
+    "processor": "Intel64 Family 6 Model 141 Stepping 1, GenuineIntel",
+    "quant_engine": "fbgemm",
+    "latency_threads": 1
+  },
+  "n_calib": 500,
+  "rows": [
+    {
+      "variant": "fp32 baseline",
+      "calibration": "-",
+      "test_acc": 0.9369,
+      "size_kb": 3861.177734375,
+      "p50_ms": 1.6455000004498288,
+      "p95_ms": 1.8669299985049292,
+      "mean_ms": 1.6853202002093894,
+      "delta_acc_pp": 0.0,
+      "size_ratio": 1.0,
+      "speedup_p50": 1.0
+    },
+    {
+      "variant": "static int8",
+      "calibration": "random 500 train images (required)",
+      "test_acc": 0.9363,
+      "size_kb": 991.841796875,
+      "p50_ms": 0.6676999983028509,
+      "p95_ms": 0.7452349993400276,
+      "mean_ms": 0.683454900077777,
+      "delta_acc_pp": -0.05999999999999339,
+      "size_ratio": 3.8929371060389153,
+      "speedup_p50": 2.4644301402311433
+    },
+    {
+      "variant": "static int8",
+      "calibration": "500 images of class 0 only",
+      "test_acc": 0.9362,
+      "size_kb": 991.841796875,
+      "p50_ms": 0.6645999965257943,
+      "p95_ms": 0.7222799991723149,
+      "mean_ms": 0.6784837002342101,
+      "delta_acc_pp": -0.06999999999999229,
+      "size_ratio": 3.8929371060389153,
+      "speedup_p50": 2.4759253822625684
+    },
+    {
+      "variant": "static int8",
+      "calibration": "500 Gaussian-noise inputs",
+      "test_acc": 0.9369,
+      "size_kb": 991.841796875,
+      "p50_ms": 0.6656499972450547,
+      "p95_ms": 0.7737499974609818,
+      "mean_ms": 0.6911598001170205,
+      "delta_acc_pp": 0.0,
+      "size_ratio": 3.8929371060389153,
+      "speedup_p50": 2.472019841147913
+    },
+    {
+      "variant": "static int8",
+      "calibration": "500 Gaussian-noise inputs x10",
+      "test_acc": 0.5762,
+      "size_kb": 991.841796875,
+      "p50_ms": 0.6649999995715916,
+      "p95_ms": 0.711709992174292,
+      "mean_ms": 0.6720146001171088,
+      "delta_acc_pp": -36.06999999999999,
+      "size_ratio": 3.8929371060389153,
+      "speedup_p50": 2.474436092496087
+    },
+    {
+      "variant": "static int8",
+      "calibration": "500 all-black images",
+      "test_acc": 0.8655,
+      "size_kb": 991.841796875,
+      "p50_ms": 0.6653000018559396,
+      "p95_ms": 0.716499998816289,
+      "mean_ms": 0.6715802003163844,
+      "delta_acc_pp": -7.139999999999991,
+      "size_ratio": 3.8929371060389153,
+      "speedup_p50": 2.473320300405074
+    }
+  ],
+  "output_scales": {
+    "random 500 train images (required)": {
+      "features.0": 0.05825,
+      "features.3": 0.049389,
+      "features.7": 0.045892,
+      "features.11": 0.038504,
+      "classifier.2": 0.082976,
+      "classifier.5": 0.343596
+    },
+    "500 images of class 0 only": {
+      "features.0": 0.055425,
+      "features.3": 0.042636,
+      "features.7": 0.040787,
+      "features.11": 0.031685,
+      "classifier.2": 0.053739,
+      "classifier.5": 0.271945
+    },
+    "500 Gaussian-noise inputs": {
+      "features.0": 0.102051,
+      "features.3": 0.08197,
+      "features.7": 0.057197,
+      "features.11": 0.031914,
+      "classifier.2": 0.049942,
+      "classifier.5": 0.187869
+    },
+    "500 Gaussian-noise inputs x10": {
+      "features.0": 1.013324,
+      "features.3": 0.862633,
+      "features.7": 0.543998,
+      "features.11": 0.345064,
+      "classifier.2": 0.595854,
+      "classifier.5": 1.91459
+    },
+    "500 all-black images": {
+      "features.0": 0.014052,
+      "features.3": 0.014997,
+      "features.7": 0.018338,
+      "features.11": 0.02018,
+      "classifier.2": 0.032358,
+      "classifier.5": 0.096458
+    }
+  }
+}
